@@ -48,7 +48,7 @@
                     </li>
                     <li class="nav-item"><a href="#" class="nav-link">Work</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="{{url('/login')}}" class="nav-link">Login</a></li>
                 </ul>
             </div>
         </div>
