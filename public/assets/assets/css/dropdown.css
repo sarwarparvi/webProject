@@ -1,0 +1,141 @@
+.cart-dropdown-customer,
+.compare-dropdown {
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+}
+
+.cart-dropdown-customer .dropdown-toggle-customer,
+.compare-dropdown .dropdown-toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+    line-height: 1;
+    color: #333;
+}
+
+.cart-dropdown-customer .dropdown-toggle-customer::after,
+.compare-dropdown .dropdown-toggle::after {
+    display: none;
+}
+.cart-dropdown-customer .dropdown-menu-customer,
+.compare-dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%; /* move the menu below the toggle */
+    left: 0; /* align the menu with the left edge of the toggle */
+    transform: translateX(0); /* optional: center the menu horizontally */
+}
+.cart-dropdown-customer .dropdown-menu-customer,
+.compare-dropdown .dropdown-menu {
+    display: block;
+    width: 10px;
+    z-index: 100;
+    font-size: 1.3rem;
+    z-index: 1001;
+    border: none;
+    border-radius: 0;
+    border: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s;
+    margin-top: 10px;
+}
+
+.cart-dropdown-customer .dropdown-menu-customer:before,
+.compare-dropdown .dropdown-menu:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    top: 100%;
+}
+
+.cart-dropdown-customer .dropdown-menu.dropdown-customer-menu-right,
+.compare-dropdown .dropdown-menu.dropdown-menu-right {
+    right: -1px;
+}
+
+.cart-dropdown-customer .btn-remove,
+.compare-dropdown .btn-remove {
+    position: absolute;
+    top: 100%;
+    right: -0.55rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    color: #cccccc;
+    font-size: 1.3rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.cart-dropdown-customer .btn-remove:hover,
+.cart-dropdown-customer .btn-remove:focus,
+.compare-dropdown .btn-remove:hover,
+.compare-dropdown .btn-remove:focus {
+    color: #333;
+}
+.cart-dropdown-customer:hover .dropdown-toggle-customer,
+.cart-dropdown-customer.show .dropdown-toggle-customer,
+.compare-dropdown:hover .dropdown-toggle,
+.compare-dropdown.show .dropdown-toggle {
+    color: #c96;
+}
+.cart-dropdown-customer:hover .dropdown-menu-customer,
+.cart-dropdown-customer.show .dropdown-menu-customer,
+.compare-dropdown:hover .dropdown-menu,
+.compare-dropdown.show .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.compare-dropdown {
+    padding-left: 0;
+}
+.compare-dropdown .dropdown-toggle {
+    font-size: 2.6rem;
+}
+
+.compare-actions {
+    display: flex;
+    align-items: center;
+}
+.compare-actions .action-link {
+    font-size: 1.3rem;
+    color: #666;
+}
+.compare-actions .action-link:hover,
+.compare-actions .action-link:focus {
+    color: #c96;
+    text-decoration: underline;
+}
+.compare-actions .btn {
+    font-size: 1.3rem;
+    min-width: 110px;
+    margin-left: auto;
+}
+.cart-dropdown-customer {
+    padding-left: 2.5rem;
+}
+.cart-dropdown-customer .dropdown-toggle-customer {
+    font-size: 3.2rem;
+}
+.cart-dropdown-customer .dropdown-toggle-customer i {
+    display: inline-block;
+    margin-top: -3px;
+}
+
+.dropdown-cart-action-customer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dropdown-cart-action-customer .btn {
+    font-size: 1.3rem;
+    min-width: 110px;
+}
